@@ -1,6 +1,6 @@
 import universityImg from '../../assets/img/university.jpg'
 
-export default function CampusLiv() {
+export default function CampusLive() {
     return(
     <section id="campus" class="section-padding position-relative overflow-hidden">
         <div class="container">

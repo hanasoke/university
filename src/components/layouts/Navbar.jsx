@@ -3,7 +3,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
       <div className="container">
         <a className="navbar-brand fw-bold fs-3 text-dark" href="#">
-          Prestige University
+          Pocinui University
         </a>
 
         <button
@@ -25,7 +25,7 @@ export default function Navbar() {
               </li>
             ))}
             <li className="nav-item ms-3">
-              <a className="btn btn-outline-primary px-3 py-1" href="#apply">
+              <a className="btn btn-outline-primary px-3" href="#apply">
                 Enroll Now
               </a>
             </li>

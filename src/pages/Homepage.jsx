@@ -5,6 +5,8 @@ import Hero from '../components/home/Hero'
 import Stats from '../components/home/Stats'
 import Programs from '../components/home/Programs'
 import Testimonials from '../components/home/Testimonials'
+import CampusLive from '../components/home/CampusLive'
+import Degree from '../components/home/Degree'
 
 export default function HomePage() {
   return (
@@ -15,6 +17,7 @@ export default function HomePage() {
       <Programs />
       <CampusLive />
       <Testimonials />
+      <Degree />
       <Footer />
     </>
   )
