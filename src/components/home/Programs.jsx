@@ -1,22 +1,17 @@
-const programs = [
-  {
-    icon: "bi-laptop",
-    title: "Computer Science",
-    desc: "Master cutting-edge technologies and AI."
-  },
-  {
-    icon: "bi-briefcase",
-    title: "Business Administration",
-    desc: "Develop leadership skills for global success."
-  },
-  {
-    icon: "bi-mortarboard",
-    title: "Engineering",
-    desc: "Innovate and build the future."
-  }
-]
+import useFetch from "../../hooks/useFetch"
+import { fetchPrograms } from "../../services/api"
 
 export default function Programs() {
+  const { data: programs, loading, error } = useFetch(fetchPrograms)
+
+  if (loading) {
+    return <p className="text-center py-5">Loading programs...</p>
+  }
+
+  if (error) {
+    return <p className="text-danger text-center">{error}</p>
+  }
+
   return (
     <section id="programs" className="section-padding bg-white">
       <div className="container">
@@ -25,12 +20,14 @@ export default function Programs() {
         </div>
 
         <div className="row g-4">
-          {programs.map((p, i) => (
-            <div className="col-lg-4 col-md-6" key={i}>
+          {programs.map(program => (
+            <div className="col-lg-4 col-md-6" key={program.id}>
               <div className="feature-card h-100 p-5 text-center rounded-4">
-                <i className={`bi ${p.icon} display-4 text-primary mb-4 d-block`}></i>
-                <h4 className="fw-bold">{p.title}</h4>
-                <p>{p.desc}</p>
+                <i
+                  className={`bi ${program.icon} display-4 text-primary mb-4 d-block`}
+                ></i>
+                <h4 className="fw-bold">{program.title}</h4>
+                <p>{program.description}</p>
               </div>
             </div>
           ))}

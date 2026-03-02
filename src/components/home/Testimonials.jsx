@@ -1,32 +1,28 @@
-import profile1 from '../../assets/img/profile-1.jpg'
-import profile2 from '../../assets/img/profile-2.jpg'
-
-const testimonials = [
-  {
-    img: profile1,
-    name: "Hanas Bayu Pratama",
-    major: "Computer Science '25",
-    text: "Prestige University transformed my career."
-  },
-  {
-    img: profile2,
-    name: "Ajeng Utami",
-    major: "Business '24",
-    text: "Best decision of my life."
-  }
-]
+import useFetch from "../../hooks/useFetch"
+import { fetchTestimonials } from "../../services/api"
 
 export default function Testimonials() {
+  const { data: testimonials, loading, error } =
+    useFetch(fetchTestimonials)
+
+  if (loading) {
+    return <p className="text-center py-5">Loading testimonials...</p>
+  }
+
+  if (error) {
+    return <p className="text-danger text-center">{error}</p>
+  }
+
   return (
     <section className="section-padding bg-light">
       <div className="container">
         <div className="row g-4 justify-content-center">
-          {testimonials.map((t, i) => (
-            <div className="col-lg-4 col-md-6" key={i}>
+          {testimonials.map(t => (
+            <div className="col-lg-4 col-md-6" key={t.id}>
               <div className="card testimonial-card p-4 shadow-sm h-100">
                 <div className="d-flex align-items-center mb-3">
                   <img
-                    src={t.img}
+                    src={t.avatar}
                     className="rounded-circle me-3"
                     width="60"
                     height="60"
@@ -37,7 +33,7 @@ export default function Testimonials() {
                     <small className="text-muted">{t.major}</small>
                   </div>
                 </div>
-                <p>"{t.text}"</p>
+                <p>"{t.message}"</p>
               </div>
             </div>
           ))}
