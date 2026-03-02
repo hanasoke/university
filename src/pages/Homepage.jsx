@@ -13,6 +13,7 @@ export default function HomePage() {
       <Hero />
       <Stats />
       <Programs />
+      <CampusLive />
       <Testimonials />
       <Footer />
     </>
