@@ -4,13 +4,13 @@
       "id": 1,
       "icon": "bi-laptop",
       "title": "Computer Science",
-      "description": "Master cutting-edge technologies and AI."
+      "description": "Master cutting-edge technologies and AI with our top-ranked CS program."
     },
     {
       "id": 2,
       "icon": "bi-briefcase",
       "title": "Business Administration",
-      "description": "Develop leadership skills."
+      "description": "Develop leadership skills for global business success."
     },
     {
       "id": 3,
@@ -26,6 +26,12 @@
       "major": "Computer Science '25",
       "message": "Prestige University transformed my career.",
       "avatar": "/img/profile-1.jpg"
+    },{
+      "id": 2,
+      "name": "Ajeng Utami",
+      "major": "Business Management '24",
+      "message": "Best decision of my life. Incredible networking opportunities and support.",
+      "avatar": "/img/profile-2.jpg"
     }
   ]
 }
