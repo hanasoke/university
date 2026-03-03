@@ -18,7 +18,7 @@ export default function Testimonials() {
       <div className="container">
         <div className="row g-4 justify-content-center">
           {testimonials.map(t => (
-            <div className="col-lg-4 col-md-6" key={t.id}>
+            <div className="col-lg-3 col-md-6" key={t.id}>
               <div className="card testimonial-card p-4 shadow-sm h-100">
                 <div className="d-flex align-items-center mb-3">
                   <img

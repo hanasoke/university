@@ -15,8 +15,14 @@
     {
       "id": 3,
       "icon": "bi-mortarboard",
-      "title": "Engineering",
-      "description": "Innovate and build the future with hands-on engineering education."
+      "title": "Education",
+      "description": "Innovate and build the future with hands-on teaching education."
+    }, 
+    {
+      "id": 4,
+      "icon": "bi-cookie",
+      "title": "Cooking Art",
+      "description": "A Culinary Arts program tailored for aspiring professional chefs."
     }
   ],
   "testimonials": [
@@ -24,14 +30,26 @@
       "id": 1,
       "name": "Hanas Bayu Pratama",
       "major": "Computer Science '25",
-      "message": "Prestige University transformed my career.",
+      "message": "Pocinui University transformed my career.",
       "avatar": "/img/profile-1.jpg"
     },{
       "id": 2,
-      "name": "Ajeng Utami",
+      "name": "Mitsuba AOI",
       "major": "Business Management '24",
       "message": "Best decision of my life. Incredible networking opportunities and support.",
       "avatar": "/img/profile-2.jpg"
+    }, {
+      "id": 3,
+      "name": "Nakano Miku",
+      "major": "Culinary Art '22",
+      "message": "Studying at this campus has been a fun experience, and the material taught here is highly relevant to the professional world.",
+      "avatar": "/img/profile-3.jpg"
+    }, {
+      "id": 4,
+      "name": "Ajeng Utami",
+      "major": "English Education '19",
+      "message": "Campus life is great, and the lessons we learn are genuinely useful for our future careers.",
+      "avatar": "/img/profile-4.jpg"
     }
   ]
 }

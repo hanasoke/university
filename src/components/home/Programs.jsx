@@ -21,7 +21,7 @@ export default function Programs() {
 
         <div className="row g-4">
           {programs.map(program => (
-            <div className="col-lg-4 col-md-6" key={program.id}>
+            <div className="col-lg-3 col-md-6" key={program.id}>
               <div className="feature-card h-100 p-5 text-center rounded-4">
                 <i
                   className={`bi ${program.icon} display-4 text-primary mb-4 d-block`}

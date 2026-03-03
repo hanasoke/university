@@ -2,7 +2,7 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
       <div className="container">
-        <a className="navbar-brand fw-bold fs-3 text-dark" href="#">
+        <a className="navbar-brand fw-bold fs-3 text-warning" href="#">
           Pocinui University
         </a>
 
